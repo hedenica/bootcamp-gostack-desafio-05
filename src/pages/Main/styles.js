@@ -30,6 +30,19 @@ export const Form = styled.form`
     border: 1px solid #eee;
     padding: 10px 15px;
     font-size: 16px;
+
+    ${(props) =>
+      props.wrongRepo &&
+      css`
+        border: 1px solid red;
+      `};
+  }
+
+  small {
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 210px;
   }
 `;
 
